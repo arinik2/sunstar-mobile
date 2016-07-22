@@ -1,0 +1,12 @@
+INPUT(
+./debug\fourier.o
+./debug\SignalWait.o
+./debug\qcustomplot.o
+./debug\mainwindow.o
+./debug\plot.o
+./debug\main.o
+./debug\audiocore.o
+./debug\moc_audiocore.o
+./debug\moc_qcustomplot.o
+./debug\moc_mainwindow.o
+);

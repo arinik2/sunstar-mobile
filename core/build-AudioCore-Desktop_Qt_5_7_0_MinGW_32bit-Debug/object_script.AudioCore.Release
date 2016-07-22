@@ -1,0 +1,12 @@
+INPUT(
+./release\fourier.o
+./release\SignalWait.o
+./release\qcustomplot.o
+./release\mainwindow.o
+./release\plot.o
+./release\main.o
+./release\audiocore.o
+./release\moc_audiocore.o
+./release\moc_qcustomplot.o
+./release\moc_mainwindow.o
+);

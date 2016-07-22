@@ -20,7 +20,7 @@ class AudioCore : public QObject
         void recordAudioSample(int, bool);
         double *getAudioSampleFourier();
 
-        static const double AudioLevel = 0.1;
+        static constexpr double AudioLevel = 0.1;
         static const int    SampleSize = 4;
         static const int    SampleRate = 44100;
         static const int    FFTN       = 2048;
