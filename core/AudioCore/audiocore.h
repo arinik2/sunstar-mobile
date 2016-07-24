@@ -8,6 +8,7 @@
 #include <QObject>
 #include <QIODevice>
 #include <QBuffer>
+#include <QVector>
 #include <QAudioOutput>
 
 class AudioCore : public QObject
@@ -19,6 +20,7 @@ class AudioCore : public QObject
         ~AudioCore();
         void recordAudioSample(int, bool);
         double *getAudioSampleFourier();
+        QVector<double> plotAudioData;
 
         #if __cplusplus > 199711L
             static constexpr double AudioLevel = 0.1;

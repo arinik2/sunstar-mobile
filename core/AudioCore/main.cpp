@@ -29,7 +29,8 @@ int main(int argc, char *argv[])
             fourierOut.write("\n");
         }
         fourierOut.close();
-        w.plot(x,y,0,len);
+        w.plot(y,w.ui->abc);
+        w.plot(core->plotAudioData,w.ui->audio);
     }
 
     w.show();

@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 #include <QVector>
 #include <QMainWindow>
-
+#include "qcustomplot.h"
 namespace Ui {
 class MainWindow;
 }
@@ -14,9 +14,7 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-    void plot(QVector<double>,QVector<double>,double,double);
-
-private:
+    void plot(QVector<double>,QCustomPlot*);
     Ui::MainWindow *ui;
 };
 

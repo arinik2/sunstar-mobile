@@ -1,5 +1,6 @@
 #include "audiocore.h"
 #include "fourier.h"
+#include <QVector>
 
 AudioCore::AudioCore()
 {
@@ -76,6 +77,7 @@ void AudioCore::stopRecording()
                 }
             }
             primaryAudioData[i / AudioCore::SampleSize] = (double) res;
+            plotAudioData.append(res);
             if (writeSampleToFile) {
                 QString number = QString::number(res);
                 destinationFile.write(number.toStdString().c_str());
